@@ -25,10 +25,10 @@ class StudentTableSeeder extends Seeder
     	for($x=0; $x<=20;$x++)
     	{
 	    	DB::table('student')->insert([
-	            'name' => Str::random(15),
+	            'name' => Str::random(10),
 	            'age' => '18',
 	            'phone' => $this->random_digits(11),
-	            'address' => Str::random(50),
+	            'address' => Str::random(25,
 	            'section_id' => '1'
 	        ]);
     	}

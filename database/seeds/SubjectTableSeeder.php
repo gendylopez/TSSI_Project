@@ -14,7 +14,7 @@ class SubjectTableSeeder extends Seeder
     	for($x=0; $x<=5;$x++)
     	{
 	    	DB::table('subject')->insert([
-	            'name' => Str::random(15)
+	            'name' => Str::random(10)
 	        ]);
     	}
     }
