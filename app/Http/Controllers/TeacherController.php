@@ -14,13 +14,14 @@ class TeacherController extends Controller
 {
     public function index()
     {
+        $test = Auth::user()->id; 
       	$account = Teacher::all()
-            ->Where('user_id', '=', 1)
+            ->Where('user_id', '=', Auth::user()->id)
             ->first();
       
     	$subjects = Subject::all();
 
-    	return view('pages.teacher', ['subjects'=>$subjects, 'account' => $account]);
+    	return view('pages.teacher', ['subjects'=>$subjects, 'account' => $account], 'test' => $test]);
     }
 
 
