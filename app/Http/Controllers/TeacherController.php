@@ -15,7 +15,7 @@ class TeacherController extends Controller
     public function index()
     {
 
-        $account = DB::table('teacher')->where('user_id', '1')->first();
+        $account = Teacher::all();
       
     	$subjects = Subject::all();
 
