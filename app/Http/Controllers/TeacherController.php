@@ -14,7 +14,7 @@ class TeacherController extends Controller
 {
     public function index()
     {
-        $account = Teacher::where('user_id', Auth::id())->get();
+        $account = Teacher::where('user_id', Auth::id())->firstOrFail();
       
     	$subjects = Subject::all();
 

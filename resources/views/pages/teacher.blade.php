@@ -85,7 +85,7 @@ $(document).ready(function(){
                     <div class="form-group">
                         <label class="col-sm-2 col-sm-2 control-label">Name</label>
                         <div class="col-sm-10">
-                            <input type="text" value="{{$account[0]->name}}" id="name" required="required" class="form-control">
+                            <input type="text" value="{{$account->name}}" id="name" required="required" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
