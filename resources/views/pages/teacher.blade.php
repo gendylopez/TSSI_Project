@@ -61,7 +61,7 @@ $(document).ready(function(){
                               message: 'Password successfully changed.',
                               type:BootstrapDialog.TYPE_SUCCESS
                           });
-                 location.reload();
+                        location.reload();
                       }
                     }); 
                   }
