@@ -14,7 +14,13 @@ class TeacherController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+      	$account = Teacher::all()
+            ->Where('user_id', '=', Auth::user()->id)
+            ->first();
+      
+    	$subjects = Subject::all();
+
+    	return view('pages.teacher', ['subjects'=>$subjects, 'account' => $account]);
     }
 
 
