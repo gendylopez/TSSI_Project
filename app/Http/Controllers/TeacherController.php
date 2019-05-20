@@ -21,7 +21,7 @@ class TeacherController extends Controller
       
     	$subjects = Subject::all();
 
-    	return view('pages.teacher', ['subjects'=>$subjects, 'account' => $account], 'test' => $test]);
+    	return view('pages.teacher', ['subjects'=>$subjects, 'account' => $account, 'test' => $test]);
     }
 
 
