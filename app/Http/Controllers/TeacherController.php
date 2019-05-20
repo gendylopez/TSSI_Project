@@ -14,8 +14,9 @@ class TeacherController extends Controller
 {
     public function index()
     {
-
-        $account = Teacher::find(1);
+        $account = Teacher::all()
+            ->Where('user_id', '=', Auth::user()->id)
+            ->first();
       
     	$subjects = Subject::all();
 
@@ -25,7 +26,7 @@ class TeacherController extends Controller
 
     public function editTeacher(Request $request)
     {
-        $teacher = Teacher::find($request->id);
+        $teacher = Teacher::find(Auth::id());
         $teacher->name = $request->name;
         $teacher->subject_id = $request->subject;
         $teacher->save();

@@ -13,7 +13,6 @@ $(document).ready(function(){
         url: '/editTeacher',
         type: 'POST',
         data: {_token: CSRF_TOKEN,
-                id:{{$account->id}},
                 name:$("#name").val(),
                 subject:$("#subject").val(),
                 email:$("#emailaddress").val(),
