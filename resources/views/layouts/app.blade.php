@@ -13,13 +13,12 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.35.4/css/bootstrap-dialog.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+    <link href="css/dataTables.min.css" rel="stylesheet">
 
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-    <link href="css/dataTables.min.css" rel="stylesheet">
 
     <!-- Styles -->
 
@@ -97,11 +96,26 @@
         </main>
     </div>
 
+<!--
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+-->
+
+
+<!-- ./wrapper -->
+<script src="js/jquery.js"></script>  
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>    
+<!-- jQuery UI 1.11.4 -->
+<script src="js/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dataTables.min.js"></script> 
+<script src="js/dataTables.responsive.js"></script>
+<script src="js/jquery.dataTables.js"></script>      
+<script src="js/bootstrap-dialog.min.js"></script> 
 
     <script type="text/javascript">
         

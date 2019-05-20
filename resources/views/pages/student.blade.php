@@ -161,7 +161,7 @@ $(function() {
 </div>
 
   <!-- START ADD MODALS -->     
-<div class="modal fade in" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addStudentLabel">
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addStudentLabel">
   <div class="modal-dialog" role="document">
     <form class="form-horizontal" id="formData" method="post">
         @csrf <!-- {{ csrf_field() }} -->
@@ -236,7 +236,7 @@ $(function() {
 <!-- END ADD MODALS --> 
 
   <!-- START EDIT MODALS -->     
-<div class="modal fade in" id="editModal" tabindex="-1" role="dialog" aria-labelledby="addStudentLabel">
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="addStudentLabel">
   <div class="modal-dialog" role="document">
     <form class="form-horizontal" id="formData" method="post">
         @csrf <!-- {{ csrf_field() }} -->
@@ -313,7 +313,7 @@ $(function() {
 <!-- END EDIT MODALS --> 
 
 <!-- START DELETE MODALS -->     
-<div class="modal fade in" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteLabel">
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteLabel">
   <div class="modal-dialog" role="document">
     <form class="form-horizontal" id="formData" method="post">
         @csrf <!-- {{ csrf_field() }} -->
