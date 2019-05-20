@@ -15,7 +15,7 @@ class TeacherController extends Controller
     public function index()
     {
 
-        $account = Teacher::all();
+        $account = Teacher::find(1);
       
     	$subjects = Subject::all();
 
