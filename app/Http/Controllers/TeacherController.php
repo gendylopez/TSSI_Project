@@ -24,12 +24,13 @@ class TeacherController extends Controller
 
     public function editTeacher(Request $request)
     {
-        $teacher = Teacher::find(Auth::id());
+        $teacher = Teacher::find($request->id);
         $teacher->name = $request->name;
         $teacher->subject_id = $request->subject;
         $teacher->save();
 
         $user = User::find($teacher->user_id);
+        $user->name = $request->name;
         $user->email = $request->email;
         $user->save();
 

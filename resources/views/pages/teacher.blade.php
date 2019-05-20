@@ -13,13 +13,14 @@ $(document).ready(function(){
         url: '/editTeacher',
         type: 'POST',
         data: {_token: CSRF_TOKEN,
+                id:{{$account->id}},
                 name:$("#name").val(),
                 subject:$("#subject").val(),
                 email:$("#emailaddress").val(),
                 dataType: 'JSON',
                 success: function (data) {
                     BootstrapDialog.show({
-                        message: 'successfully updated your account.',
+                        message: 'Successfully updated your account.',
                         type:BootstrapDialog.TYPE_SUCCESS
                     });
                  location.reload();
