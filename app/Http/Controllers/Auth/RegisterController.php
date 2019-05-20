@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Teacher;
 use App\Subject;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use App\Http\Controllers\Controller;
@@ -64,11 +65,19 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        $user = new User();
+        $user->name = $data['name'];
+        $user->email = $data['email'];
+        $user->password = Hash::make($data['password']);
+        $user->save();
+
+        $teacher = new Teacher();
+        $teacher->name = $data['name'];
+        $teacher->subject_id = $data['subject'];
+        $teacher->user_id = $user->id;
+        $teacher->save();
+
+        return $user;
     }
 
     public function showRegistrationForm(){
